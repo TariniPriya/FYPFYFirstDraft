@@ -26,7 +26,7 @@ Button Register;
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Login.this, MainPg.class);
+                Intent intent = new Intent(Login.this, MainPage.class);
                 startActivity(intent);
             }
         });

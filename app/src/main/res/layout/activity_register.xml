@@ -103,6 +103,8 @@
                 android:ems="10"
                 android:hint="Enter your password"
                 android:inputType="textPassword"
+                android:drawableRight="@drawable/visibility_off"
+                android:longClickable="false"
                 android:minHeight="48dp" />
 
         </LinearLayout>
@@ -129,6 +131,8 @@
                 android:ems="10"
                 android:hint="Enter your password again"
                 android:inputType="textPassword"
+                android:drawableRight="@drawable/visibility_off"
+                android:longClickable="false"
                 tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>

@@ -10,9 +10,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="80dp"
         android:layout_margin="10dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingTop="80dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,8 +30,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
 
             <TextView
                 android:id="@+id/Email"
@@ -39,8 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableStart="@drawable/email"
-                android:textColor="#000"
-                android:text="Email:" />
+                android:text="Email:"
+                android:textColor="#000" />
 
             <EditText
                 android:id="@+id/Email_Input"
@@ -48,9 +48,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textEmailAddress"
-
                 android:hint="Enter your email"
+
+                android:inputType="textEmailAddress"
 
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -68,8 +68,8 @@
                 android:layout_weight="1"
 
                 android:drawableStart="@drawable/password"
-                android:textColor="#000"
-                android:text="Password" />
+                android:text="Password"
+                android:textColor="#000" />
 
             <EditText
                 android:id="@+id/pw"
@@ -87,8 +87,8 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:paddingTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
 
             <Button
                 android:id="@+id/Register"
@@ -96,15 +96,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Sign In Now"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                app:cornerRadius="15dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingTop="5dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
 
             <TextView
                 android:id="@+id/LoginPageQuestion"
@@ -112,8 +113,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textSize="14sp"
-                android:text="Don't have an account? Register now" />
+                android:text="Don't have an account? Register now"
+                android:textSize="14sp" />
         </LinearLayout>
 
     </LinearLayout>

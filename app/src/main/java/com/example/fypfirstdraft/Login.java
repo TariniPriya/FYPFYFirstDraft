@@ -40,3 +40,7 @@ TextView loginQuestion;
 
     }
 }
+
+/*
+ensure user keys in the deetz before proceeding to the next activity. Same for Register activity
+ */

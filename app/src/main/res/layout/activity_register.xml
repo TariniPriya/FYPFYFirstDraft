@@ -200,8 +200,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="Register Now"
                 android:textAllCaps="false"
-                android:text="Register Now" />
+                app:cornerRadius="15dp" />
 
         </LinearLayout>
 

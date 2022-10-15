@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingTop="100dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -36,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableStart="@drawable/write"
+                android:textColor="#000"
                 android:text="First Name:" />
 
             <EditText
@@ -44,8 +46,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:hint="Enter your first name"
                 android:inputType="textPersonName"
-                android:hint="Enter your first name" />
+                android:minHeight="48dp" />
 
         </LinearLayout>
 
@@ -60,6 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableStart="@drawable/write"
+                android:textColor="#000"
                 android:text="Last Name:" />
 
             <EditText
@@ -87,6 +91,7 @@
                 android:layout_weight="1"
 
                 android:drawableStart="@drawable/password"
+                android:textColor="#000"
                 android:text="Password" />
 
             <EditText
@@ -94,9 +99,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:inputType="textPassword"
                 android:ems="10"
-                android:hint="Enter your password" />
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
 
         </LinearLayout>
 
@@ -111,6 +117,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableStart="@drawable/password"
+                android:textColor="#000"
                 android:text="Confirm Password" />
 
             <EditText
@@ -119,8 +126,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:hint="Enter your password again"
                 android:inputType="textPassword"
-                android:hint="Enter your password again" />
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
@@ -136,6 +144,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableStart="@drawable/email"
+                android:textColor="#000"
                 android:text="Email:" />
 
             <EditText
@@ -163,6 +172,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableStart="@drawable/phone"
+                android:textColor="#000"
                 android:text="Contact:" />
 
             <EditText
@@ -179,8 +189,9 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <Button
@@ -188,7 +199,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Register" />
+                android:textAllCaps="false"
+                android:text="Register Now" />
 
         </LinearLayout>
 

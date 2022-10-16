@@ -100,4 +100,5 @@ public class Register extends AppCompatActivity {
 
 /*
 ensure user keys in the deetz before proceeding to the next activity. Same for Login activity
+Firebase
  */

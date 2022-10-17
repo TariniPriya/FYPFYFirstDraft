@@ -70,3 +70,6 @@ public class MainPage extends AppCompatActivity {
         });
     }
 }
+/*
+log out
+*/

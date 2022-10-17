@@ -12,3 +12,9 @@ public class Medicine extends AppCompatActivity {
         setContentView(R.layout.activity_medicine);
     }
 }
+
+/*
+medication reminder
+pop-up notification - set a timer
+medicine explanation in general
+*/

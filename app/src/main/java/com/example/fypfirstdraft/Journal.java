@@ -12,3 +12,9 @@ public class Journal extends AppCompatActivity {
         setContentView(R.layout.activity_journal);
     }
 }
+
+/*
+food plan - recommend healthy food
+diary - upload images
+calculator - blood pressure, blood sugar
+*/

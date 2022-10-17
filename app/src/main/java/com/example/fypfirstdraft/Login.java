@@ -4,31 +4,72 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
-EditText FName_Input, LName_Input, Email_Input, Contact_Input;
-Button Register;
+EditText Email_Input, Password;
+Button Login;
+TextView loginQuestion;
+boolean passwordVisible;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        FName_Input=(EditText)findViewById(R.id.FName_Input);
-        LName_Input=(EditText)findViewById(R.id.FName_Input);
         Email_Input=(EditText)findViewById(R.id.Email_Input);
-        Contact_Input=(EditText)findViewById(R.id.Contact_Input);
-        Register=(Button)findViewById(R.id.Register);
+        Password=(EditText)findViewById(R.id.pw);
+        Login=(Button)findViewById(R.id.Register);
+        loginQuestion=(TextView)findViewById(R.id.LoginPageQuestion);
 
-        Register.setOnClickListener(new View.OnClickListener() {
-
+        Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Login.this, MainPg.class);
+                Intent intent = new Intent(Login.this, MainPage.class);
                 startActivity(intent);
+            }
+        });
+
+        loginQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this, Register.class);
+                startActivity(intent);
+            }
+        });
+
+        Password.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                final int Right=2;
+                if(event.getAction()==MotionEvent.ACTION_UP){
+                    if(event.getRawX()>=Password.getRight()-Password.getCompoundDrawables()[Right].getBounds().width()){
+                        int selection=Password.getSelectionEnd();
+                        if(passwordVisible){
+                            Password.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.visibility_off, 0);
+                            Password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                            passwordVisible=false;
+                        }else{
+                            Password.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.visibility, 0);
+                            Password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                            passwordVisible=true;
+                        }
+                        Password.setSelection(selection);
+                        return true;
+                    }
+                }
+                return false;
             }
         });
     }
 }
+
+/*
+ensure user keys in the deetz before proceeding to the next activity. Same for Register activity
+Firebase
+ */

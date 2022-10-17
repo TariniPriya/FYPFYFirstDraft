@@ -102,6 +102,7 @@ public class Register extends AppCompatActivity {
 decided to include Date of Birth. So need change the format to calendar
 forgot we need to include gender as well. for this, we can input radio-button (male, female, others)
 ensure user keys in the deetz before proceeding to the next activity. Same for Login activity
+age
 Firebase
 not sure if yall want do the OTP thing. tat one need firebase also
  */

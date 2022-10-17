@@ -71,5 +71,6 @@ boolean passwordVisible;
 
 /*
 ensure user keys in the deetz before proceeding to the next activity. Same for Register activity
+need have forget password option also
 Firebase
  */

@@ -117,7 +117,9 @@
                 android:gravity="center"
                 android:text="Don't have an account? Register now"
                 android:textSize="14sp" />
+
         </LinearLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+

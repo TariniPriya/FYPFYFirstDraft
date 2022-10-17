@@ -68,7 +68,7 @@
                 android:layout_weight="1"
 
                 android:drawableStart="@drawable/password"
-                android:text="Password"
+                android:text="Password:"
                 android:textColor="#000" />
 
             <EditText

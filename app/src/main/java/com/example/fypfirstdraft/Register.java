@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Register extends AppCompatActivity {
-    EditText FName_Input, LName_Input, Password, ConfirmPassword, Email_Input, Contact_Input;
+    EditText FName_Input, DOB, Password, ConfirmPassword, Email_Input, Contact_Input;
     TextView back;
     Button Register;
     boolean passwordVisible;
@@ -23,7 +23,7 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         FName_Input=(EditText)findViewById(R.id.FName_Input);
-        LName_Input=(EditText)findViewById(R.id.FName_Input);
+        DOB=(EditText)findViewById(R.id.DOB_Input);
         Password=(EditText)findViewById(R.id.pw);
         ConfirmPassword=(EditText)findViewById(R.id.cpw);
         Email_Input=(EditText)findViewById(R.id.Email_Input);
@@ -99,6 +99,7 @@ public class Register extends AppCompatActivity {
 }
 
 /*
+decided to include Date of Birth. So need change the format to calendar
 ensure user keys in the deetz before proceeding to the next activity. Same for Login activity
 Firebase
  */

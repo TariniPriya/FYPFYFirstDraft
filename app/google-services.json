@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "697030111217",
+    "project_id": "fyp-health-app",
+    "storage_bucket": "fyp-health-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697030111217:android:52b1726cabbc581f8a5e50",
+        "android_client_info": {
+          "package_name": "com.example.fypfirstdraft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697030111217-oca82rnrth4uhrih475om6lsm2op32cp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsDQvEzZTP0jQi_gp9xMV2gNlwLJjOTho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697030111217-oca82rnrth4uhrih475om6lsm2op32cp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

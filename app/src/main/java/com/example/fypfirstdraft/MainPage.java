@@ -13,14 +13,14 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class MainPage extends AppCompatActivity {
-    CardView journalCard, medicineCard, testResultCard, appointmentCard, chatbotCard, profileCard;
+    CardView journalCard, exerciseCard, testResultCard, appointmentCard, chatbotCard, profileCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainpage);
         journalCard = (CardView) findViewById(R.id.JournalCard);
-        medicineCard = (CardView) findViewById(R.id.MedicineCard);
+        exerciseCard = (CardView) findViewById(R.id.ExerciseCard);
         testResultCard = (CardView) findViewById(R.id.TestResultCard);
         appointmentCard = (CardView) findViewById(R.id.AppointmentCard);
         chatbotCard = (CardView) findViewById(R.id.ChatbotCard);
@@ -34,10 +34,10 @@ public class MainPage extends AppCompatActivity {
             }
         });
 
-        medicineCard.setOnClickListener(new View.OnClickListener() {
+        exerciseCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainPage.this, Medicine.class);
+                Intent intent = new Intent(MainPage.this, Exercise.class);
                 startActivity(intent);
             }
         });

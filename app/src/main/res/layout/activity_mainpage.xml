@@ -68,7 +68,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/MedicineCard"
+                android:id="@+id/ExerciseCard"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="8dp"
@@ -87,7 +87,7 @@
                         android:id="@+id/image_view2"
                         android:layout_width="0dp"
                         android:layout_height="125dp"
-                        android:src="@drawable/medicine"
+                        android:src="@drawable/exercise"
                         app:layout_constraintBottom_toTopOf="@+id/textView2"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -99,7 +99,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="MEDICINE"
+                        android:text="EXERCISE"
                         android:textAllCaps="true"
                         android:textSize="14sp"
                         android:textStyle="bold"
@@ -155,7 +155,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Test Result"
+                        android:text="MEDICAL RECORD"
                         android:textAllCaps="true"
                         android:textSize="14sp"
                         android:textStyle="bold"

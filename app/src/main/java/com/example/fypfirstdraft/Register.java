@@ -12,15 +12,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.util.Calendar;
 
 public class Register extends AppCompatActivity {
-    EditText FName_Input, DOB, Gender, Password, ConfirmPassword, Email_Input, Contact_Input;
+    EditText FName_Input, DOB, Password, ConfirmPassword, Email_Input, Contact_Input;
     TextView back;
     Button Register;
     DatePickerDialog picker;
+    RadioGroup Gender;
     boolean passwordVisible;
 
     @Override
@@ -29,13 +32,21 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         FName_Input=(EditText)findViewById(R.id.FName_Input);
         DOB=(EditText)findViewById(R.id.DOB_Input);
-        Gender=(EditText)findViewById(R.id.Gender_Input);
+        Gender=(RadioGroup)findViewById(R.id.RadioGroup);
         Password=(EditText)findViewById(R.id.pw);
         ConfirmPassword=(EditText)findViewById(R.id.cpw);
         Email_Input=(EditText)findViewById(R.id.Email_Input);
         Contact_Input=(EditText)findViewById(R.id.Contact_Input);
         Register=(Button)findViewById(R.id.Register);
         back= (TextView) findViewById(R.id.back);
+
+        Gender.clearCheck();
+        Gender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+            }
+        });
+
 
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,7 +136,6 @@ public class Register extends AppCompatActivity {
 }
 
 /*
-forgot we need to include gender as well. for this, we can input radio-button (male, female, others)
 ensure user keys in the deetz before proceeding to the next activity. Same for Login activity
 age
 Firebase/azuresql

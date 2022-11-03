@@ -14,7 +14,8 @@ public class Exercise extends AppCompatActivity {
 }
 
 /*
-medication reminder
-pop-up notification - set a timer
-medicine explanation in general
+exercise buddy (find nearby buddy, online buddy)
+watering of plant reward system
+reminder for exercise
+height and weight for BMI
 */

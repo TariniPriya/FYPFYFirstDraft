@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "697030111217",
-    "project_id": "fyp-health-app",
-    "storage_bucket": "fyp-health-app.appspot.com"
+    "project_number": "778066005871",
+    "project_id": "fyp-health-app-748bf",
+    "storage_bucket": "fyp-health-app-748bf.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:697030111217:android:52b1726cabbc581f8a5e50",
+        "mobilesdk_app_id": "1:778066005871:android:82ddca501f29e607fd629a",
         "android_client_info": {
           "package_name": "com.example.fypfirstdraft"
         }
       },
       "oauth_client": [
         {
-          "client_id": "697030111217-oca82rnrth4uhrih475om6lsm2op32cp.apps.googleusercontent.com",
+          "client_id": "778066005871-9anhi1jtiar4p6h98vahaubg8c0vv2qs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fypfirstdraft",
+            "certificate_hash": "bcebc0e7e576ec51c00a7f42e17f757ede6c1a26"
+          }
+        },
+        {
+          "client_id": "778066005871-pm0u3k7snl4k2jme39b70948r6ebvvdv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDsDQvEzZTP0jQi_gp9xMV2gNlwLJjOTho"
+          "current_key": "AIzaSyCfKHazZGSQ7T-vzSPYFY-g42iFFjwzyz0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "697030111217-oca82rnrth4uhrih475om6lsm2op32cp.apps.googleusercontent.com",
+              "client_id": "778066005871-pm0u3k7snl4k2jme39b70948r6ebvvdv.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

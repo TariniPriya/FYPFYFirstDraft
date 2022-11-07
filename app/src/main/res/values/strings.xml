@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FYP First Draft</string>
+    <string name="app_name">FYP</string>
     <string name="title_activity_profile">Profile</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>

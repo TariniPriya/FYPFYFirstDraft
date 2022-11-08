@@ -9,9 +9,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,7 +19,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/BloodPressureCard"
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
+                android:layout_height="120dp"
                 android:layout_margin="8dp"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -73,7 +71,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/DiabetesCard"
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
+                android:layout_height="120dp"
                 android:layout_margin="8dp"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -125,7 +123,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/BMICard"
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
+                android:layout_height="120dp"
                 android:layout_margin="8dp"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -177,7 +175,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/FAQCard"
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
+                android:layout_height="120dp"
                 android:layout_margin="8dp"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"

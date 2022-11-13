@@ -99,7 +99,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:paddingBottom="70dp"
-                        android:text="Diabetes"
+                        android:text="Glucose Level"
                         android:textAllCaps="true"
                         android:textSize="14sp"
                         android:textStyle="bold"

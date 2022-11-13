@@ -12,3 +12,7 @@ public class FAQ extends AppCompatActivity {
         setContentView(R.layout.activity_faq);
     }
 }
+
+
+
+/*1234567890123456789*/

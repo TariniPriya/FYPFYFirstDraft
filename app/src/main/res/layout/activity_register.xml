@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="80dp"
+        android:paddingTop="10dp"
         android:layout_margin="10dp"
         android:orientation="vertical">
 
@@ -63,9 +63,10 @@
                 android:layout_width="63dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:drawableStart="@drawable/write"
+                android:drawableStart="@drawable/calendar"
                 android:textColor="#000"
-                android:text="Date of Birth:" />
+                android:layout_marginBottom="20dp"
+                android:text="Date of Birth (dd/mm/yyyy)" />
 
             <EditText
                 android:id="@+id/DOB_Input"
@@ -73,8 +74,55 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Need change to calendar"
+                android:focusable="false"
+                android:hint="Select your date of birth (dd/mm/yyyy)"
+                android:inputType="date"
                 tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/Gender"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/write"
+                android:layout_marginTop="20dp"
+                android:text="Gender:"
+                android:textColor="#000" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/RadioGroup"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Female" />
+
+            </RadioGroup>
+
 
         </LinearLayout>
 
@@ -164,7 +212,6 @@
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -226,5 +273,9 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

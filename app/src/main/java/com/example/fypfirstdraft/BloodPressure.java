@@ -4,17 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ProfilePage extends AppCompatActivity {
+public class BloodPressure extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_page);
+        setContentView(R.layout.activity_blood_pressure);
     }
 }
-
-/*
-prompt them to enter their address
-current health condition
-current medicine intake, name of it
- */

@@ -2,7 +2,6 @@ package com.example.fypfirstdraft;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
@@ -10,20 +9,13 @@ import android.text.method.PasswordTransformationMethod;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
-
-import java.util.Calendar;
 
 public class Register extends AppCompatActivity {
     EditText FName_Input, DOB, Password, ConfirmPassword, Email_Input, Contact_Input;
     TextView back;
     Button Register;
-    DatePickerDialog picker;
-    RadioGroup Gender;
     boolean passwordVisible;
 
     @Override
@@ -32,21 +24,12 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         FName_Input=(EditText)findViewById(R.id.FName_Input);
         DOB=(EditText)findViewById(R.id.DOB_Input);
-        Gender=(RadioGroup)findViewById(R.id.RadioGroup);
         Password=(EditText)findViewById(R.id.pw);
         ConfirmPassword=(EditText)findViewById(R.id.cpw);
         Email_Input=(EditText)findViewById(R.id.Email_Input);
         Contact_Input=(EditText)findViewById(R.id.Contact_Input);
         Register=(Button)findViewById(R.id.Register);
         back= (TextView) findViewById(R.id.back);
-
-        Gender.clearCheck();
-        Gender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-            }
-        });
-
 
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,26 +38,6 @@ public class Register extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //Setting up DatePicker on EditText
-        DOB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-               final Calendar calendar = Calendar.getInstance();
-                int day = calendar.get(Calendar.DAY_OF_MONTH);
-                int month = calendar.get(Calendar.MONTH);
-                int year = calendar.get(Calendar.YEAR);
-
-                //Date Picker Dialog
-                picker = new DatePickerDialog(Register.this, new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                        DOB.setText(dayOfMonth + "/" + (month + 1) + "/" + year);
-                    }
-                },year, month, day);
-                picker.show();
-            }
-        });
-
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -136,8 +99,10 @@ public class Register extends AppCompatActivity {
 }
 
 /*
+decided to include Date of Birth. So need change the format to calendar
+forgot we need to include gender as well. for this, we can input radio-button (male, female, others)
 ensure user keys in the deetz before proceeding to the next activity. Same for Login activity
 age
-Firebase/azuresql
+Firebase
 not sure if yall want do the OTP thing. tat one need firebase also
  */

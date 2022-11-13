@@ -63,7 +63,7 @@
                 android:layout_width="63dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:drawableStart="@drawable/write"
+                android:drawableStart="@drawable/calendar"
                 android:textColor="#000"
                 android:layout_marginBottom="20dp"
                 android:text="Date of Birth (dd/mm/yyyy)" />
